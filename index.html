@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css"> 
+<title>Лабороаторна робота №11</title>
+</head>
+<body >
+<div id="mainBlock">
+	<div>
+		<div id= "level">
+			<h3>Рівень складності</h3>
+			<p><input type="radio" id="level1" class="levelChange"
+			 name="contact" value="easy">
+			<label for="level1">Початковий</label></p>
+
+			<p><input type="radio" id="level2"  class="levelChange"
+			 name="contact" value="medium">
+			<label for="level2">Середній</label></p>
+
+			<p><input type="radio" id="level3"  class="levelChange"
+			 name="contact" value="hard">
+			<label for="level3">Високий</label></p>
+		</div>
+		<div id="cards">
+			<div id = "word"></div>	
+		</div>
+	</div>
+	<div class= "steps">
+	<div class = "prev n"><a href="#"><</a></div>
+	<div id="currentStep"></div>
+	<div class = "next n"><a href="#">></a></div>
+	</div>
+	<input type="text" size="40" id="inputText">
+	<div id="statistic">
+		<p>Статистика</p>
+		<div id ="right">
+			<p>Вірно</p>
+			<p id = "rightAnswer">0</p>
+		</div>
+		<div id ="false">
+			<p>Невірно</p>
+			<p id = "falseAnswer">0</p>
+		</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script	>
+<script src="script.js"></script> 
+</body>
+
+</html>
